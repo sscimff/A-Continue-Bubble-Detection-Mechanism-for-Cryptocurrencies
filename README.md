@@ -20,3 +20,10 @@ The original version of this project was developed as part of a research endeavo
 
 - Get the crypto icon by [Crypto Icon API](https://rapidapi.com/gabriel.mbugua307/api/crypto-icon) `https://crypto-icon.p.rapidapi.com/get-icon/{currency}`
 - Get the real-time price by [API Ninjas](https://api-ninjas.com/api/cryptoprice) `https://api.api-ninjas.com/v1/cryptoprice?symbol={symbol}`
+
+## Screenshot
+
+![alt text](img/index.png)
+
+![alt text](img/btc.png)
+- Latest bubble calculation hasn't updated
