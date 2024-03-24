@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      text-align: right;
+    }
+</style>
+
+<h2>{{ pair }}</h2>
+<p>
+    from
+    <input type="datetime-local" id="time-picker"
+         name="time-picker" value="{{ earliest_date }}"
+         min="{{ earliest_date }}" max="{{ latest_date }}">
+    to
+    <input type="datetime-local" id="time-picker" 
+    name="time-picker" value="{{ latest_date }}"
+    min="{{ earliest_date }}" max="{{ latest_date }}">
+    <input type="button" value="Show Bubble Occurrence" name="btn">
+</p>
+
+{% autoescape off %}
+{{ chart|safe }}
+<!-- {{ bubble|safe }} -->
+{% comment %} {{ gtrend|safe }} {% endcomment %}
+{% endautoescape %}
+
+{% endblock %}
